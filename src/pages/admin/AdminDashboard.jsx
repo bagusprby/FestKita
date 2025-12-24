@@ -13,22 +13,25 @@ export default function AdminDashboard() {
       .catch(err => console.error(err));
   }, []);
 
-  const handleDelete = (id) => {
-    console.log("Hapus event id:", id);
+  const handleDelete = (event) => {
+    console.log("Hapus event:", event);
   };
 
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Admin Dashboard</h1>
+      <h1 className="text-2xl font-bold mb-4">
+        Admin Dashboard
+      </h1>
 
       <table className="w-full border">
         <thead>
           <tr>
-            <th className="border p-2">Nama</th>
+            <th className="border p-2">Nama Event</th>
             <th className="border p-2">Tanggal</th>
             <th className="border p-2">Aksi</th>
           </tr>
         </thead>
+
         <tbody>
           {events.map(event => (
             <tr key={event.id}>
@@ -36,8 +39,8 @@ export default function AdminDashboard() {
               <td className="border p-2">{event.date}</td>
               <td className="border p-2">
                 <button
-                  onClick={() => handleDelete(event.id)}
-                  className="text-red-500"
+                  onClick={() => handleDelete(event)}
+                  className="text-red-600 font-semibold"
                 >
                   Hapus
                 </button>
