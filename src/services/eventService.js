@@ -1,6 +1,8 @@
+
+
 import axios from "axios";
 
-const API_URL = "https://694a969d26e870772065f858.mockapi.io/Events";
+const API_URL = "https://695acd371d8041d5eeb550a2.mockapi.io/events";
 
 export const eventService = {
   getAll: () => axios.get(API_URL),
