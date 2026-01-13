@@ -3,6 +3,7 @@ import { eventService } from '../../services/eventService';
 import { Calendar, MapPin, Users, Sparkles } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import SearchBar from '../../components/ui/SearchBar';
+import Footer from '../../components/ui/Footer';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -237,6 +238,7 @@ const Home = () => {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

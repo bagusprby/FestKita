@@ -3,6 +3,7 @@ import Navbar from './components/ui/Navbar';
 import Home from './pages/user/Home';
 import Events from './pages/user/Events';
 import EventDetail from './pages/user/EventDetail';
+import About from './pages/user/About';
 import AdminLogin from './pages/admin/AdminLogin';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import EventForm from './pages/admin/EventForm';
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<><Navbar /><Home /></>} />
           <Route path="/events" element={<><Navbar /><Events /></>} />
           <Route path="/event/:id" element={<><Navbar /><EventDetail /></>} />
+          <Route path="/about" element={<><Navbar /><About /></>} />
           
           {/* Admin Login - tanpa protection */}
           <Route path="/admin/login" element={<AdminLogin />} />

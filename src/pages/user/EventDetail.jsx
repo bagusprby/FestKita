@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { eventService } from '../../services/eventService';
 import { Calendar, MapPin, Clock, Shield, MessageCircle, CheckCircle, ArrowLeft } from 'lucide-react';
+import Footer from '../../components/ui/Footer';
 
 const EventDetail = () => {
   const { id } = useParams();
@@ -245,6 +246,7 @@ const EventDetail = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

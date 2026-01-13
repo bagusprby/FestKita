@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { eventService } from '../../services/eventService';
 import { Calendar, MapPin, SlidersHorizontal, Grid, List } from 'lucide-react';
 import SearchBar from '../../components/ui/SearchBar';
+import Footer from '../../components/ui/Footer';
 
 const Events = () => {
   const navigate = useNavigate();
@@ -351,6 +352,7 @@ const Events = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
