@@ -7,6 +7,7 @@ import About from './pages/user/About';
 import AdminLogin from './pages/admin/AdminLogin';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import EventForm from './pages/admin/EventForm';
+import NotFound from './pages/NotFound';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -48,6 +49,8 @@ function App() {
               </ProtectedRoute>
             } 
           />
+          {/* Fallback: Not Found */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>
